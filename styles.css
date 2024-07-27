@@ -1,0 +1,290 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    display: flex;
+}
+
+#navv {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.mainsContainer {
+    height: 30em;
+    width: 50em;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    border-top-left-radius: 20px;
+    transition: 1s;
+}
+
+.mainsContainer:hover {
+    transform: scale(1.3);
+    border-radius: 30px;
+}
+
+.mainsContainer1 {
+    display: flex;
+    height: 30em;
+    width: 50em;
+    background: linear-gradient(white, black);
+    border-top-right-radius: 20px;
+    justify-content: flex-end;
+    transition: 1s
+}
+
+.yyy {
+    display: flex;
+    margin-right: 250px;
+    margin-top: 250px;
+}
+
+.mainsContainer1:hover {
+    transform: scale(1.3);
+    border-radius: 30px;
+}
+
+.secondContainer {
+    height: 10em;
+    width: 50em;
+    background: linear-gradient(black, white);
+    display: flex;
+}
+
+.secondContainer1 {
+    display: flex;
+    height: 10em;
+    width: 50em;
+    background: linear-gradient(black, white);
+    justify-content: flex-end;
+
+}
+
+.profile {
+    height: 180px;
+    width: 180px;
+    border-radius: 120px;
+    margin-top: -50px;
+    padding: 20px;
+    transition: 0.5;
+}
+
+.secondContainer .names {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.secondContainer1 .names {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.profile:hover {
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+.center {
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+#footerr {
+    display: flex;
+}
+
+.fdiv1 {
+    display: flex;
+    width: 50em;
+    height: 20em;
+    background: linear-gradient(white, grey);
+    text-align: center;
+}
+
+.fdiv2 {
+    display: flex;
+    width: 50em;
+    height: 20em;
+    background: linear-gradient(white, grey);
+    justify-content: flex-end;
+}
+
+.fMargin {
+    margin: 100px;
+}
+
+.fMargin h2 {
+    font-size: 30px;
+    padding: 0px 0px 50px 0px;
+}
+
+.fMargin p {
+    font-size: 25px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.linker {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    transition: 0.7s;
+}
+
+.linker:hover {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 770px) {
+
+    .mainsContainer {
+        height: 15em;
+        width: 30em;
+    }
+
+    .mainsContainer1 {
+        height: 15em;
+        width: 30em;
+    }
+
+    .mainsContainer1:hover {
+        transform: scale(1.1);
+        border-radius: 30px;
+        margin-right: 100px;
+    }
+
+    .mainsContainer:hover {
+        transform: scale(1.1);
+        border-radius: 30px;
+        margin-left: 100px;
+    }
+
+
+    .secondContainer {
+        height: 100px;
+    }
+
+    .secondContainer1 {
+        height: 100px;
+    }
+
+    .secondContainer .names {
+        font-size: 10px;
+    }
+
+    .secondContainer1 .names {
+        font-size: 10px;
+    }
+
+    .profile {
+
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .fdiv1 {
+        width: 30em;
+        height: 20em;
+    }
+
+    .fdiv2 {
+        width: 30em;
+        height: 20em;
+    }
+
+    .center {
+        font-size: 10px;
+    }
+
+    .fMargin h2 {
+        font-size: 20px;
+    }
+
+    .fMargin p {
+        font-size: 10px;
+    }
+
+    .icon {
+        width: 8px;
+        height: 8px;
+    }
+
+    .linker {
+        width: 30px;
+        height: 30px;
+    }
+
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.image {
+    width: 500px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.container img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.8s;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.text:hover {
+    opacity: 1;
+}
+
+.text h1 {
+    font-size: 55px;
+    color: whitesmoke;
+    margin: 0px 0px 20px 0px;
+}
+
+.text p {
+    font-size: 20px;
+    color: whitesmoke;
+}
